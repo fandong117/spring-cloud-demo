@@ -1,0 +1,15 @@
+spring.application.name: cloud-config-server
+server.port: 7001
+
+# 配置服务注册中心
+eureka.client.serviceUrl.defaultZone: http://localhost:1111/eureka/
+# 文件管理配置
+#spring.profiles.active: native
+#spring.cloud.config.server.native.searchLocations: file:D:/Program/Spring Cloud/springCloud1/cloud-config-server/src/main/resources/config-repo
+# git管理配置
+spring.cloud.config.server.git.uri: https://github.com/fandong117/spring-cloud-config-demo.git
+spring.cloud.config.server.git.searchPaths: config-repo
+spring.cloud.config.label: master
+
+#spring.cloud.config.server.git.username: username
+#spring.cloud.config.server.git.password: password

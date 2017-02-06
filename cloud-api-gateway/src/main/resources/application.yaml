@@ -1,0 +1,11 @@
+#spring
+spring.application.name: cloud-api-gateway
+#server
+server.port: 5555
+#eureka
+eureka.client.serviceUrl.defaultZone: http://localhost:1111/eureka/
+#zuul
+zuul.routes.api-compute.path: /api-compute/**
+zuul.routes.api-compute.serviceId: cloud-compute-service
+zuul.routes.api-test.path: /api-test/**
+zuul.routes.api-test.serviceId: test-serviceA

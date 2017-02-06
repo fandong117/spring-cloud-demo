@@ -1,0 +1,16 @@
+spring.application.name: cloud-compute-service
+server.port: 2222
+#eureka:
+#  datacenter: cloud
+#  instance:
+#    preferIpAddress: true
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:1111/eureka/
+
+
+security:
+  oauth2:
+    resource:
+      tokenInfoUri: http://localhost:9999/oauth/check_token
+      userInfoUri: http://localhost:9999/user
